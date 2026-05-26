@@ -19,13 +19,13 @@ function TrendingToggle({ value, onChange }: Props) {
         >
             <ToggleGroupItem
                 value="day"
-                className={`px-4 py-2 font-semibold rounded-full data-[state=on]:bg-blue-900 data-[state=on]:text-green-400`}
+                className={`px-4 py-2 font-semibold rounded-full data-[state=on]:bg-blue-900 data-[state=on]:text-green-400 transition-all duration-300 ease-in-out`}
             >
                 Today
             </ToggleGroupItem>
             <ToggleGroupItem
                 value="week"
-                className={`px-4 py-2 font-semibold rounded-full data-[state=on]:bg-blue-900 data-[state=on]:text-green-400`}
+                className={`px-4 py-2 font-semibold rounded-full data-[state=on]:bg-blue-900 data-[state=on]:text-green-400 transition-all duration-300 ease-in-out`}
             >
                 This Week
             </ToggleGroupItem>

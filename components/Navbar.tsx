@@ -11,6 +11,7 @@ import {
 import { DialogTitle } from '@radix-ui/react-dialog'
 import { MovieProps, NormalizedMovie } from '@/app/types/MovieTypes'
 import { Input } from './ui/input'
+import Link from 'next/link'
 
 const Navbar = () => {
     const { theme, setTheme } = useTheme()
@@ -78,9 +79,9 @@ const Navbar = () => {
                 <div className="flex items-center gap-4">
                     <div className="text-xl md:text-2xl font-bold tracking-tight">Movie App</div>
 
-                    <nav className="hidden md:flex items-center gap-4 text-sm md:text-base">
-                        <button className="hover:text-primary transition">Home</button>
-                    </nav>
+                    <Link href="/" className="hidden md:flex items-center gap-4 text-sm md:text-base">
+                        <button className="hover:text-primary transition cursor-pointer">Home</button>
+                    </Link>
                 </div>
 
                 <div className="flex items-center gap-3 md:gap-4">
